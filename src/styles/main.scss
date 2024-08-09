@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Prata&display=swap");
+
+.text-libre-franklin {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://i.imgur.com/O10Pjgo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+
+  @apply flex justify-center text-my-text p-4 md:p-0 md:py-4 overflow-hidden;
+
+  *:focus-visible {
+    outline: none;
+  }
+
+  .myClock {
+    -webkit-text-stroke: 1px #b18484;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .headerInputs button, .myButn {
+    @apply flex gap-2 justify-center items-center bg-white border-2 font-medium rounded-full px-3 text-xs;
+  }
+
+  .myContainerHere {
+    /* ===== Scrollbar CSS ===== */
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+
+    &::-webkit-scrollbar {
+      width: 7px;
+      background-color: transparent;
+      margin-right: 10px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background:transparent;
+      margin-right: 10px;
+
+    }
+  }
+}
