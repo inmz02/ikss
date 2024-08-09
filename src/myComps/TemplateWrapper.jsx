@@ -35,8 +35,8 @@ const TemplateWrapper = ({
               <img
                 src={
                   input.completed
-                    ? "src/assets/pink-tick.png"
-                    : "src/assets/grey-tick.png"
+                    ? "https://i.imgur.com/Ae7avbn.png"
+                    : "https://i.imgur.com/LdS0mhz.png"
                 }
                 alt={input.completed ? "pink tick" : "grey tick"}
               />
